@@ -3,10 +3,10 @@
 一个使用 Haskell 实现的序数算术实验项目，研究范围为小于
 \(\varepsilon_0\) 的序数。序数使用 Cantor 标准型（Cantor normal form，CNF）表示：
 
-\[
+$$
 \alpha = \omega^{a_1}c_1 + \cdots + \omega^{a_k}c_k,
-\quad a_1 > \cdots > a_k,\quad c_i > 0。
-\]
+\quad a_1 > \cdots > a_k,\quad c_i > 0
+$$
 
 项目地址：[MarchBeta2087/OrdPA](https://github.com/MarchBeta2087/OrdPA)
 
@@ -87,7 +87,7 @@ mul (finite 2) omega /= mul omega (finite 2)
 - `add a b`、`mul a b` 和 `pow a b` 分别表示序数加法、乘法和幂。
 - `view a` 将序数分类为 `ZeroV`、`SuccV` 或 `LimV`。
 - 对极限序数，`fund a n` 给出其标准基本列中的第 \(n\) 项，例如
-  \(\omega^2\mathopen{}\lbrack n\mathclose{} = \omega n\)。
+  \(\omega^2\mathopen{}\lbrack n\rbrack\mathclose{} = \omega n\)。
 - `eps0Seq n` 给出 \(\varepsilon_0\) 的第 \(n\) 个近似项；\(\varepsilon_0\) 本身不属于 `Ord`。
 - `toNatural` 只适用于有限序数；对无限序数调用会抛出异常。
 - `fgh` 的结果增长很快，建议只使用小参数进行演示。
