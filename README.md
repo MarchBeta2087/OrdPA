@@ -1,7 +1,7 @@
 # OrdinalPA
 
 一个使用 Haskell 实现的序数算术实验项目，研究范围为小于
-\(\varepsilon_0\) 的序数。序数使用 Cantor 标准型（Cantor normal form，CNF）表示：
+$\varepsilon_0$ 的序数。序数使用 Cantor 标准型（Cantor normal form，CNF）表示：
 
 $$
 \alpha = \omega^{a_1}c_1 + \cdots + \omega^{a_k}c_k,
