@@ -52,7 +52,7 @@ Linux/macOS：
 ./demo
 ```
 
-`Demo.hs` 会运行吸收律、非交换性、乘法与幂、序数比较、基本列、视图、快速增长层次以及 \(\varepsilon_0\) 基本列的示例检查。示例中的每项检查都会输出 `OK` 或 `FAIL`。
+`Demo.hs` 会运行吸收律、非交换性、乘法与幂、序数比较、基本列、视图、快速增长层次以及 $\varepsilon_0$ 基本列的示例检查。示例中的每项检查都会输出 `OK` 或 `FAIL`。
 
 编译后 GHC 可能生成 `demo`/`demo.exe`、`.o` 和 `.hi` 文件；这些是构建产物，不是源码的一部分。
 
@@ -83,12 +83,12 @@ mul (finite 2) omega /= mul omega (finite 2)
 
 ## 数学约定
 
-- `omega` 表示 \(\omega\)，`omegaPow a` 表示 \(\omega^a\)。
+- `omega` 表示 $\omega$，`omegaPow a` 表示 $\omega^a$。
 - `add a b`、`mul a b` 和 `pow a b` 分别表示序数加法、乘法和幂。
 - `view a` 将序数分类为 `ZeroV`、`SuccV` 或 `LimV`。
 - 对极限序数，`fund a n` 给出其标准基本列中的第 \(n\) 项，例如
-  \(\omega^2\mathopen{}\lbrack n\rbrack\mathclose{} = \omega n\)。
-- `eps0Seq n` 给出 \(\varepsilon_0\) 的第 \(n\) 个近似项；\(\varepsilon_0\) 本身不属于 `Ord`。
+  $\omega^2\mathopen{}\lbrack n\rbrack\mathclose{} = \omega n$。
+- `eps0Seq n` 给出 $\varepsilon_0$ 的第 $n$ 个近似项；$\varepsilon_0$ 本身不属于 `Ord`。
 - `toNatural` 只适用于有限序数；对无限序数调用会抛出异常。
 - `fgh` 的结果增长很快，建议只使用小参数进行演示。
 
